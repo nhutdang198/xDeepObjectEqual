@@ -1,0 +1,27 @@
+{
+  "name": "x-deep-object-equal",
+  "version": "0.0.1",
+  "description": "**xDeepObjectEqual** is a TypeScript function that allows you to deeply compare two objects for equality. It traverses nested objects and their properties to determine if they are equal.",
+  "main": "xDeepObjectEqual.js",
+  "devDependencies": {
+    "@types/jest": "^29.5.4",
+    "jest": "^29.6.3",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.1.6"
+  },
+  "scripts": {
+    "test": "npx jest",
+    "build": "npx tsc xDeepObjectEqual.ts"
+  },
+  "author": "nhutdm",
+  "license": "MIT",
+  "keywords": [
+    "diff deep object",
+    "deep object diff",
+    "x-deep-object-equal",
+    "x deep object equal",
+    "deep object equal",
+    "deep equal object",
+    "equal object"
+  ]
+}
