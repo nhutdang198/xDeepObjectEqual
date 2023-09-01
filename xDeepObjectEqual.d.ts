@@ -5,6 +5,6 @@
  * @param secondObject The second object to compare.
  * @returns `true` if the objects are deeply equal, `false` otherwise.
  */
-declare function deepObjectEqual<T>(firstObject: T, secondObject: T): boolean;
+declare function xDeepObjectEqual<T>(firstObject: T, secondObject: T): boolean;
 
-export = deepObjectEqual;
+export = xDeepObjectEqual;
