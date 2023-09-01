@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.xDeepObjectEqual = void 0;
 /**
  * Deeply compares two objects for equality.
  *
@@ -5,7 +8,7 @@
  * @param secondObject The second object to compare.
  * @returns `true` if the objects are deeply equal, `false` otherwise.
  */
-var xDeepObjectEqual = function (firstObject, secondObject) {
+function xDeepObjectEqual(firstObject, secondObject) {
     if (firstObject === secondObject) {
         return true;
     }
@@ -26,5 +29,12 @@ var xDeepObjectEqual = function (firstObject, secondObject) {
             return false;
         }
     }
+    for (var _a = 0, keys2_1 = keys2; _a < keys2_1.length; _a++) {
+        var key = keys2_1[_a];
+        if (!firstObject.hasOwnProperty(key)) {
+            return false;
+        }
+    }
     return true;
-};
+}
+exports.xDeepObjectEqual = xDeepObjectEqual;

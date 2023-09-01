@@ -14,15 +14,36 @@ To use xDeepObjectEqual, you'll need to include the provided TypeScript file in 
    ```typescript
    import { xDeepObjectEqual } from 'x-deep-object-equal'
 
-   // Create an instance of xDeepObjectEqual
-   const caseInsensitiveMap = new xDeepObjectEqual<string, any>();
+    const firstObject = {
+      a: 1,
+      b: {
+        c: 2,
+        d: {
+          e: 3,
+        },
+      },
+    };
+
+    const secondObject = {
+      a: 1,
+      b: {
+        c: 2,
+        d: {
+          e: 3,
+        },
+      },
+      f: 5,
+    };
+
+   xDeepObjectEqual(firstObject, secondObject);
+   // false
 
 2. Import the `xDeepObjectEqual` class into your Javascript code:
 
    ```javascript
    const { xDeepObjectEqual } = require("x-deep-object-equal")
 
-   // Create an instance of xDeepObjectEqual
-   const caseInsensitiveMap = new xDeepObjectEqual();
+   xDeepObjectEqual(firstObject, secondObject);
+   // false
 
 ## Notes
