@@ -46,4 +46,6 @@ To use xDeepObjectEqual, you'll need to include the provided TypeScript file in 
    xDeepObjectEqual(firstObject, secondObject);
    // false
 
-## Notes
+## Support Me
+
+If you find this project helpful or want to show your appreciation, you can support me by [buying me a coffee](https://www.buymeacoffee.com/nhutdm). Your support is greatly appreciated!
